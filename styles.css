@@ -1,0 +1,305 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: #ffffff;
+  }
+  
+  header {
+    background-color: #1a1a1a;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo img.circular-logo {
+    max-width: 100px;
+    border-radius: 50%;  /* This creates the circular frame */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 1em;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  #hero {
+    text-align: center;
+    padding: 4em 2em;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero-bg.jpg') no-repeat center center/cover;
+  }
+  
+  #hero h1 {
+    font-size: 3em;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 2em;
+    background-color: #4CAF50;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  main {
+    padding: 2em;
+  }
+  
+  main h2 {
+    color: #4CAF50;
+  }
+  
+  .project {
+    background-color: #1a1a1a;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .project img {
+    max-width: 150px;
+    margin-right: 1em;
+    border-radius: 5px;
+  }
+  
+  footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  footer .social-media {
+    margin-bottom: 1em;
+  }
+  
+  footer .social-media a {
+    margin: 0 0.5em;
+    display: inline-block;
+  }
+  
+  footer .social-media img {
+    width: 30px;
+    height: 30px;
+  }
+  /* Existing Styles */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0d0d0d;
+  color: #ffffff;
+}
+
+header {
+  background-color: #1a1a1a;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img.circular-logo {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 1em;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#hero {
+  text-align: center;
+  padding: 4em 2em;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero-bg.jpg') no-repeat center center/cover;
+}
+
+#hero h1 {
+  font-size: 3em;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.5em 2em;
+  background-color: #4CAF50;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+main {
+  padding: 2em;
+}
+
+main h2 {
+  color: #4CAF50;
+}
+
+.project {
+  background-color: #1a1a1a;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.project img {
+  max-width: 150px;
+  margin-right: 1em;
+  border-radius: 5px;
+}
+
+#team .team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1em 0;
+}
+
+#team .team-member {
+  text-align: center;
+  margin: 1em;
+}
+
+#team .team-member img.circular-member {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+footer .social-media {
+  margin-bottom: 1em;
+}
+
+footer .social-media a {
+  margin: 0 0.5em;
+  display: inline-block;
+}
+
+footer .social-media img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Contact Page Styles */
+
+#contact .contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+#contact .contact-info,
+#contact .contact-form {
+  flex: 1;
+  min-width: 300px;
+  margin: 1em;
+}
+
+#contact .contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact .contact-info ul li {
+  margin-bottom: 0.5em;
+}
+
+#contact .contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .contact-form label {
+  margin-bottom: 0.5em;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+}
+
+#contact .contact-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact .map iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  #contact .contact-container {
+    flex-direction: column;
+  }
+}
+/* Existing Styles */
+
+/* Add styles for the back-to-top button */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+}
+
+.back-to-top.visible {
+  display: block;
+}
+
+.back-to-top:hover {
+  background-color: #45a049;
+}
