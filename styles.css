@@ -303,3 +303,150 @@ footer .social-media img {
 .back-to-top:hover {
   background-color: #45a049;
 }
+.service-list, .product-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service, .product {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  width: 300px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.service h3, .product h3 {
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/* Services section */
+/* Updated services section background */
+#services {
+  text-align: center;
+  padding: 20px;
+  background-color: #141414; /* Dark theme background */
+  color: white; /* Ensures text is visible */
+}
+
+/* Horizontal scrolling container */
+.services-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 20px;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+/* Customize scrollbar */
+.services-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.services-container::-webkit-scrollbar-thumb {
+  background:  #45a049; /* Theme primary color */
+  border-radius: 5px;
+}
+
+/* Service cards */
+.service {
+  display: inline-block;
+  min-width: 200px;
+  padding: 15px;
+  background-color: #1e1e1e; /* Darker shade for contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Soft glow */
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+  color: white; /* Ensures readability */
+}
+
+.service:hover {
+  transform: scale(1.1);
+  background-color:  #45a049 /* Highlight effect */
+}
+/* Product section */
+#products {
+  text-align: center;
+  padding: 20px;
+  background-color: #141414; /* Dark theme background */
+  color: white;
+}
+
+/* Product list container */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Product box */
+.product {
+  background-color: #1e1e1e; /* Darker shade */
+  border: 1px solid #333; /* Subtle border */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  background-color: #45a049; /* Highlight effect */
+}
+
+/* Product image */
+.product img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Product title */
+.product h3 {
+  margin: 15px 0;
+  font-size: 20px;
+}
+
+/* Product description */
+.product p {
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* Product button */
+.product button {
+  padding: 10px 15px;
+  background-color: #45a049;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background-color: #141414;
+}

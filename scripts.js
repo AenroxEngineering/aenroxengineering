@@ -55,3 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+function openContactForm() {
+  alert("Please email us at aenroxengineering@gmail.com or visit the Contact page.");
+}
