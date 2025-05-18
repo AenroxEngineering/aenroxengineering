@@ -58,36 +58,3 @@ document.addEventListener('DOMContentLoaded', () => {
 function openContactForm() {
   alert("Please email us at aenroxengineering@gmail.com or visit the Contact page.");
 }
-// Check if the user is an admin (stored in localStorage)
-const isAdmin = localStorage.getItem("isAdmin") === "true";
-
-// Show blog upload form only for admins
-if (isAdmin) {
-  document.getElementById("upload-blog").style.display = "block";
-}
-
-// Handle blog submissions
-document.getElementById("blogForm").addEventListener("submit", function(event) {
-  event.preventDefault();
-
-  if (!isAdmin) {
-    alert("Only admins can post blogs.");
-    return;
-  }
-
-  // Get blog title and content
-  const title = document.getElementById("blog-title").value;
-  const content = document.getElementById("blog-content").value;
-
-  // Create a new blog post element
-  const blogPost = document.createElement("div");
-  blogPost.classList.add("blog-post");
-  blogPost.innerHTML = `<h3>${title}</h3><p>${content}</p>`;
-
-  // Append blog post to the blog section
-  document.getElementById("blog-posts").appendChild(blogPost);
-
-  // Clear the form
-  document.getElementById("blog-title").value = "";
-  document.getElementById("blog-content").value = "";
-});
