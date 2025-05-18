@@ -450,3 +450,45 @@ button:hover {
 .product button:hover {
   background-color: #141414;
 }
+/* Blog section */
+#blog-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Individual blog post */
+.blog-post {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+/* Blog upload section (hidden for non-admins) */
+#upload-blog {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #141414;
+  border-radius: 10px;
+}
+
+#blog-title, #blog-content {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

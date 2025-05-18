@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogs - Aenrox Engineering</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Aenrox Engineering Logo" class="circular-logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Latest Blog Posts</h2>
+    <div id="blog-posts">
+      <!-- Blogs will be displayed here dynamically -->
+    </div>
+    
+    <!-- Only admins can see this -->
+    <div id="upload-blog" style="display: none;">
+      <h3>Upload a Blog (Admin Access Only)</h3>
+      <form id="blogForm">
+        <input type="text" id="blog-title" placeholder="Blog Title" required>
+        <textarea id="blog-content" placeholder="Write your blog here..." required></textarea>
+        <button type="submit">Submit Blog</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Aenrox Engineering. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
